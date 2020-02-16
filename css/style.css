@@ -1,0 +1,342 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+li{
+    list-style: none;
+}
+/****actual css start****/
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(16, 238, 219, 0.651),rgba(240, 58, 231, 0.616)), url(../image/bng.png);
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(100% 0%,100% 77%,50% 100%,0 75%,0 0);
+}
+.navbar{
+    background: rgba(6, 250, 238, 0.466)!important;
+}
+.imgcls{
+    width: 60px;
+    height:60px;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgb(0,0,0,.6);
+
+}
+.navbar-nav .active{
+    font-weight: bold!important;
+}
+.navbar a{
+    color: #000000!important;
+}
+.navbar-nav a:hover{
+    color: rgba(105, 93, 93, 0.781)!important;
+}
+
+.center-part h4{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: #c0f8f8;
+    letter-spacing: 2px;
+    line-height: 1.4 ;
+}
+.center-part P{
+    position: absolute;
+    top: 47%;
+    letter-spacing: 1px;
+    color: #15e2fd;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.center-part a{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    border: 2px solid  #15e2fd ;
+    transform: translateX(-50%);
+    padding: 10px 50px;
+    border-radius: 100px;
+    color:  #15e2fd;
+    transition-duration: 300ms;
+
+}
+.center-part a:hover{
+    text-decoration: none;
+    color: #000000;
+    background-color:  #15e2fd;
+    box-shadow: 0 0 20px rgb(0,0,0,.4);
+}
+.pointer{
+    border: 2px solid #15e2fd;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 72%;
+    border-top: none;
+    border-bottom: none;
+    box-shadow: 0 0 20px rgba(255, 10, 255, 0.774);
+    border-radius: 100px;
+    padding: 40px 20px;
+    transform: translateX(-50%);
+}
+.pointer .ins{
+    position: relative;
+    width: 12px;
+    height:12px;
+    border-radius: 100px;
+    bottom: 40px;
+    right: 5px;
+    background-color: rgb(0, 255, 242);
+    animation: animate 2s linear infinite;
+}
+@keyframes animate{
+    100%{
+        bottom: -16px;
+        opacity: 0.1;
+    }
+    50%{
+        box-shadow: 0 20px rgba(245, 41, 245, 0.966);
+    }
+    0%{
+        background-color: rgb(5, 174, 252);
+    }
+}
+.icnt i{
+    position: relative;
+    bottom: 37px;
+    right: 7px;
+    color: rgba(92, 243, 243, 0.849);
+    font-size: 1.1rem;
+}
+.navbar-nav{
+    text-transform: uppercase;
+    font-size: 1rem!important;
+}
+.nav-item a{
+    transition-duration: 300ms;
+}
+.nav-item a:hover{
+    color: rgb(0,0,0,.4);
+}
+
+/**********gallery part start********/
+.gallary{
+    width: 100%;
+    height: 100vh;
+}
+.gallary h3{
+    color: rgb(55, 68, 255);
+    font-size: 2rem;
+    margin: 30px 0;
+    position: relative;
+}
+.gallary p{
+    position: relative;
+    bottom: 30px;
+    color: rgb(17, 79, 248);
+}
+
+.clex{
+    height: 65vh;
+    transition-duration: 400ms;
+}
+.clex:hover{
+    box-shadow: 0 0 20px rgb(0,0,0,.4);
+    transform: translateY(-20px);
+}
+.clex img{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 30px 0; 
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgb(0,0,0,.4);
+}
+.clex p{
+    font-size: 1.2rem;
+}
+.clex a{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    font-size: .9rem;
+    text-transform: uppercase;
+    border: 1px solid rgb(16, 240, 210);
+    padding: 8px 20px;
+    border-radius: 100px;
+    background-color: rgba(11, 255, 255, 0.418);
+    color: #000000;
+    transform: translateX(-50%);
+    transition-duration: 400ms;
+}
+.clex a:hover{
+    text-decoration: none;
+    background-color: rgb(0, 255, 242);
+    box-shadow: 0 0 20px rgb(0,0,0,.4);
+}
+
+.musicd{
+    width: 100%;
+    height: 100vh;
+}
+.musicd h3{
+    margin: 30px 0;
+    color: rgba(78, 57, 57, 0.534);
+}
+.musicd p{
+    position: relative;
+    bottom: 30px;
+}
+.ctp{
+    height: 67vh;
+}
+.ctp img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 35%;
+    margin: 10px 0;
+    border-radius: 100px;
+    box-shadow: 0 0 20px rgb(0,0,0,.4);
+    cursor: pointer;
+    animation: ani1 16s linear infinite;
+}
+@keyframes ani1{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.ctp audio{
+    margin: 60% 0;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    box-shadow: 0 0 20px rgb(0,0,0,.4);
+    border-radius: 100px;
+}
+.ctp p{
+    position: relative;
+    top: 30%;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    color: rgba(22, 83, 70, 0.651);
+    cursor: pointer;
+}
+.ctp p:hover{
+    color: red;
+}
+.cn-number{
+    width: 100%;
+    height: 30vh;
+}
+.cn-number P{
+    position: relative;
+    bottom: 30px;
+}
+.pert p{
+    top: 30px;
+}
+.cn-number h1{
+    position: relative;
+    top: 20px;
+}
+.contacts{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,#f5f3e6 0%,#f5d4f59d 0%,#cddbf5 100%);
+}
+.contacts h3{
+    padding: 70px 0;
+    color: rgba(252, 180, 24, 0.589);
+    
+}
+.contacts p{
+    position: relative;
+    bottom: 80px;
+    color: rgba(252, 180, 24, 0.589);
+}
+.hd-pt button{
+    position: relative!important;
+    left: 50%!important;
+    transform: translateX(-50%);
+    padding: 10px 50px;
+    border-radius: 100px;
+}
+.ftr{
+    width: 100%;
+    height: 50vh;
+}
+.footer-divt li a{
+    position: relative;
+    bottom: 40px;
+}
+.scrolltop {
+    bottom: 40px;
+    position: fixed;
+    right: 30px;
+}
+.scrolltop i{
+    color: #000000;
+    font-size: 1.5rem;
+    padding: 7px 10px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    color: rgba(240, 101, 76, 0.795);
+    background-color: rgba(32, 226, 226, 0.4);
+}
+.scrolltop i:hover{
+    box-shadow: 0 0 20px rgb(0,0,0,.2);
+    transform: translateY(-1px);
+}
+
+@media(max-width:768px){
+    .center-part h4{
+        font-size: 1.4rem;
+        margin-top: 20px;
+    }
+    .center-part a{
+        padding: 7px 23px;
+        margin: 20px 0;
+    }
+    .musicd{
+       position: relative;
+       top: 120%;
+    }
+    .ctp{
+        height: 80vh;
+    }
+    .cn-number h1{
+        font-size: 1.6rem;
+        top: -20px;
+        position: relative;
+        left: 15px;
+    }
+    .cn-number .pert p{
+        font-size: .6rem;
+        position: relative;
+        top: 10px;
+        left: 12px;
+    }
+    .form-group{
+        position: relative;
+        left: 10%;
+        
+    }
+    .hd-pt{
+        position: relative;
+        left: 20px;
+    }
+}
